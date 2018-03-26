@@ -33,7 +33,7 @@ public class UserListing {
 		try {
 			ut = (UserTransaction) new InitialContext().lookup("java:comp/UserTransaction");
 			ut.begin();
-			logger.info("ut: " + ut);
+			//logger.info("UserTransaction: " + ut);
 			
 			em = ((EntityManagerFactory) (new InitialContext()).lookup("java:comp/env/jphw/emf")).createEntityManager();
 			logger.info("em: " + em);
